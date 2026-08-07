@@ -16,10 +16,7 @@ A minimal React sandbox template powered by **Next.js**, **TypeScript**, **SWC**
 Copy this repository into a new project with [degit](https://github.com/Rich-Harris/degit) (no git history):
 
 ```bash
-npx degit convict/open-source/nextjs-ts-template my-react-sandbox
-cd my-react-sandbox
-yarn install
-yarn prepare
+npx degit https://github.com/convict-git/nextjs-ts-template my-react-sandbox
 ```
 
 Replace `convict/open-source/nextjs-ts-template` with your GitHub org/repo once published, e.g. `your-org/nextjs-ts-template`.

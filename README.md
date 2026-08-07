@@ -9,6 +9,7 @@ A minimal React sandbox template powered by **Next.js**, **TypeScript**, **SWC**
 - **Next.js 16** with SWC compiler and explicit **webpack** bundler (`--webpack` flag)
 - **ESLint** + **Prettier** with pre-commit hooks via **Husky** and **lint-staged**
 - **Jest** + **React Testing Library** for component tests
+- **Apollo Server** GraphQL API at `/api/graphql` with a reference CRUD example
 - Path alias: `@/*` → `src/*`
 
 ## Use as a template
@@ -31,6 +32,8 @@ yarn dev       # start dev server (webpack + SWC)
 
 Open [http://localhost:3000](http://localhost:3000).
 
+GraphQL sandbox and API reference: [http://localhost:3000/api/graphql](http://localhost:3000/api/graphql) (see [`src/pages/api/README.md`](src/pages/api/README.md)).
+
 ## Scripts
 
 | Command              | Description                        |
@@ -50,7 +53,9 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ```
 src/
+  graphql/          # Apollo Server schema, resolvers, data layer
   pages/            # Next.js Pages Router (_app, _document, _error, routes)
+    api/            # API routes (GraphQL at /api/graphql)
   styles/           # Global styles
   components/       # React components
     __tests__/      # Component tests (React Testing Library)
